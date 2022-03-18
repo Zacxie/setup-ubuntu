@@ -9,7 +9,6 @@ sudo apt install git -y
 sudo apt install vim -y
 sudo apt install hwinfo -y
 sudo apt install burpsuite -y
-sudo apt install burps -y
 sudo apt install burp -y
 sudo apt install htop -y
 sudo apt install neovim -y
@@ -20,7 +19,6 @@ sudo apt install firefox-trunk -y
 sudo apt install pgadmin4 -y
 sudo apt install hexedit -y
 sudo apt install gnome-tweaks -y
-sudo apt install gnome-shell-extensions -y
 sudo apt install gnome-shell-extensions -y
 sudo apt install docker.io -y
 sudo apt install moreultils -y

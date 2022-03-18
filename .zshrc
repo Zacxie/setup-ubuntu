@@ -11,6 +11,6 @@ source $ZSH/oh-my-zsh.sh
 alias vim=nvim
 alias python=python3
 
-PROMPT='%{$fg[green]%}%D{%L:%M:%S}'$PROMPT
+PROMPT='%{$fg[cyan]%}%D{%L:%M:%S}'$PROMPT
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform

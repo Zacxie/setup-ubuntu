@@ -9,25 +9,24 @@ sudo apt install git -y
 sudo apt install vim -y
 sudo apt install hwinfo -y
 sudo apt install burpsuite -y
-sudo apt install burps -y
 sudo apt install burp -y
 sudo apt install htop -y
+sudo apt install neovim -y
+sudo apt install java -y
+sudo apt install default-jdk -y
+sudo apt install postman -y
+sudo apt install firefox-trunk -y
+sudo apt install pgadmin4 -y
+sudo apt install hexedit -y
+sudo apt install gnome-tweaks -y
+sudo apt install gnome-shell-extensions -y
+sudo apt install docker.io -y
+sudo apt install moreultils -y
 sudo snap install --classic code -y
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 #set default shell to zsh
 chsh -s $(which zsh)
 
-#make zsh-autosuggestions dir and move into it
-mkdir /usr/share/zsh/plugins
-mkdir /usr/share/zsh/plugins/zsh-autosuggestions
-cd /usr/share/zsh/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-
-#make zsh-syntax-highligting dir and move into it
-mkdir /usr/share/zsh/plugins/zsh-syntax-highlighting
-cd /usr/share/zsh/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-
-#get my zshrc config and overwrite the existing
-curl https://raw.githubusercontent.com/Zacxie/zshrc-ubuntu/main/zshrc > ~/.zshrc
+cp init.vim ~/.config/nvim/
+cp .zshrc ~/.zshrc

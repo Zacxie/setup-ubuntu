@@ -23,6 +23,7 @@ sudo apt install gnome-tweaks -y
 sudo apt install gnome-shell-extensions -y
 sudo apt install docker.io -y
 sudo apt install moreultils -y
+sudo apt install bat -y
 sudo snap install --classic code -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting

@@ -10,7 +10,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim=nvim
 alias python=python3
+alias python='batcat'
 
-PROMPT='%{$fg[cyan]%}%D{%L:%M:%S}'$PROMPT
+PROMPT='%{$fg[cyan]%}%D{%T}'$PROMPT
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
